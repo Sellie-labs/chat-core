@@ -1,0 +1,32 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+async-trait = "0.1.71"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+futures = "0.3"
+pgvector = { version = "0.2", features = ["postgres", "sqlx"],git = "https://github.com/Abraxas-365/pgvector-rust" }
+llm_rust = { version = "*", git = "https://github.com/dynamicdevs/llm_rust.git", branch = "develop" }
+log = "0.4.19"
+actix-rt = "2.6"
+actix-web = "4.0"
+actix-service = "2.0.2"
+serde_json = "1.0.103"
+postgres = "0.19.5"
+env_logger = "0.8.3"
+actix-cors = "0.6.4"
+sqlx = { version = "0.6", features = ["runtime-tokio-native-tls", "postgres","json"] }
+handlebars = "4.3.7"
+uuid = "1.4.1"
+chrono = "0.4.26"
+regex = "1.9.5"
+actix-files = "0.6.2"
+reqwest-eventsource = "0.5.0"
+async-stream = "0.3"
+actix-web-lab = "0.20.0"
